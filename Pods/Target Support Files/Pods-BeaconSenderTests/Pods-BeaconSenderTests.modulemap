@@ -1,0 +1,6 @@
+framework module Pods_BeaconSenderTests {
+  umbrella header "Pods-BeaconSenderTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
