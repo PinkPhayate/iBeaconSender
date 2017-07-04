@@ -58,6 +58,16 @@
                                 <rect key="frame" x="166" y="290" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="UUID" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX8-DG-Oaa">
+                                <rect key="frame" x="0.0" y="409" width="375" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="1C5-RM-DsG"/>
+                                    <constraint firstAttribute="width" constant="375" id="aGK-8q-l38"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -67,7 +77,9 @@
                             <constraint firstItem="m4o-cK-j2r" firstAttribute="top" secondItem="AfY-nf-ELs" secondAttribute="bottom" constant="8" id="6KT-av-aWY"/>
                             <constraint firstItem="whx-Yh-nIR" firstAttribute="top" secondItem="m4o-cK-j2r" secondAttribute="bottom" constant="24" id="A4m-Ez-K4v"/>
                             <constraint firstItem="kmr-I8-J08" firstAttribute="top" secondItem="whx-Yh-nIR" secondAttribute="bottom" constant="8" id="BMe-QB-6tf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WX8-DG-Oaa" secondAttribute="bottom" constant="195" id="DmQ-PT-arH"/>
                             <constraint firstItem="m4o-cK-j2r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fS6-Az-uPO"/>
+                            <constraint firstItem="WX8-DG-Oaa" firstAttribute="top" secondItem="dbG-j6-oJd" secondAttribute="bottom" constant="65" id="n7I-OD-UwO"/>
                             <constraint firstItem="AfY-nf-ELs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o78-Yy-Izd"/>
                             <constraint firstItem="dbG-j6-oJd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yWd-tX-K20"/>
                         </constraints>
@@ -75,6 +87,7 @@
                     <connections>
                         <outlet property="majorTextField" destination="m4o-cK-j2r" id="nzG-Di-FWr"/>
                         <outlet property="minorTextField" destination="kmr-I8-J08" id="GvI-ot-J9z"/>
+                        <outlet property="uuidLable" destination="WX8-DG-Oaa" id="29i-4h-0ot"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
